@@ -1,6 +1,6 @@
 package Level1;
 
-public class ³»Àû {
+public class ë‚´ì  {
 	  public int solution(int[] a, int[] b) {
 	        int answer = 0;
 	        int length=a.length;

@@ -1,4 +1,4 @@
-package �غ�;
+package 준비운동;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class BOJ_2693_N��°ū�� {
+public class BOJ_2693_N번째큰수 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 		int N=Integer.parseInt(br.readLine());

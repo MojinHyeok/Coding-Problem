@@ -2,7 +2,7 @@ package Jungol;
 
 import java.util.Scanner;
 
-public class ÁÖ»çÀ§´øÁö±â2 {
+public class ì£¼ì‚¬ìœ„ë˜ì§€ê¸°2{
 	static int N,M;
 	static int[] num;
 	public static void main(String[] args) {

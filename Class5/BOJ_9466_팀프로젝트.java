@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class BOJ_9466_��������Ʈ {
+public class BOJ_9466_팀프로젝트 {
 //	�ʹ� ������ DFS�� ������ ������ �ӽ� �迭�� ����� visitüũ�� �Ͽ� �� �� �� visit �� ���� üũ�� �Ѵٸ� ����Ŭ�� �����. �����Ͽ� �׶� ī��Ʈ�� �Ͽ� ���� ���ϴ� �������� �Ͽ��µ� �ð� �ʰ��� �����ȴ�. 
 //
 //	�׷���  �ڵ带 visitüũ�� �״�� ���� �� �ְ� ���� ���̾���.

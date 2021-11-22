@@ -2,7 +2,7 @@ package Level3;
 
 import java.util.Arrays;
 
-public class ¸®Æ²ÇÁ·»Áî»çÃµ¼º {
+public class ë¦¬í‹€í”„ë Œì¦ˆì‚¬ì²œì„± {
 	static int row,column,goal;
 	static char[][] map;
 	static node[] Alpha;
@@ -34,7 +34,7 @@ public class ¸®Æ²ÇÁ·»Áî»çÃµ¼º {
         column=n;
         goal=0;
         ans="";
-        //¾ËÆÄºª °¹¼ö countÇÏ±â
+        //ï¿½ï¿½ï¿½Äºï¿½ ï¿½ï¿½ï¿½ï¿½ countï¿½Ï±ï¿½
         boolean[] visit=new boolean[26];
         Alpha=new node[26];
         map=new char[row][column];
@@ -89,7 +89,7 @@ public class ¸®Æ²ÇÁ·»Áî»çÃµ¼º {
 			if(cnt==0) {
 				
 				for(int j=0;j<4;j++) {
-					//¾Æ·¡ºÎºÐÀº À§·Î°¥¶§´Â ¾Æ·¡·Î°¥ÇÊ¿ä°¡ ¾ø°í ¿ÞÂÊÀ¸·Î°¥¶§´Â ¿À¸¥ÂÊÀ¸·Î °¥ ÇÊ¿ä°¡ ¾ø½À´Ï´Ù.
+					//ï¿½Æ·ï¿½ï¿½Îºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Î°ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Æ·ï¿½ï¿½Î°ï¿½ï¿½Ê¿ä°¡ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î°ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ê¿ä°¡ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.
 					if(j==d)continue;
 					if(d==0&&j==1)continue;
 					if(d==1&&j==0)continue;

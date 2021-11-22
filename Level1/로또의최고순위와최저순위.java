@@ -1,6 +1,6 @@
 package Level1;
 
-public class ·Î¶ÇÀÇÃÖ°í¼øÀ§¿ÍÃÖÀú¼øÀ§ {
+public class ë¡œë˜ì˜ìµœê³ ìˆœìœ„ì™€ìµœì €ìˆœìœ„ {
 	 public int[] solution(int[] lottos, int[] win_nums) {
 	        int[] answer = {0};
 	        int equal=0;

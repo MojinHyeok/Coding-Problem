@@ -3,7 +3,7 @@ package Jungol;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class ÁÖ»çÀ§´øÁö±â1 {
+public class ì£¼ì‚¬ìœ„ë˜ì§€ê¸°1{
 	static int N,M;
 	static int[] num;
 	static boolean[] check;

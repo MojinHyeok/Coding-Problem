@@ -10,7 +10,7 @@ import java.util.Queue;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
-public class BOJ_9328���� {
+public class BOJ_9328열쇠 {
 //	���� �ذ��
 //	�� ������ �����ؾ� �� ����
 //

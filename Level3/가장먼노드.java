@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class °¡Àå¸Õ³ëµå {
+public class ê°€ìž¥ë¨¼ë…¸ë“œ {
 	public static void main(String[] args) {
 		int[][] temp= {{3,6},{4,3},{3,2},{1,3},{1,2},{2,4},{5,2}};
 		System.out.println(solution(6, temp));

@@ -2,7 +2,7 @@ package Level3;
 
 import java.util.Arrays;
 
-public class Ãß¼®Æ®·¡ÇÈ {
+public class ì¶”ì„íŠ¸ë˜í”½{
 	public static void main(String[] args) {
 		String[] temp= {"2016-09-15 20:59:57.421 0.351s",
 				"2016-09-15 20:59:58.233 1.181s",

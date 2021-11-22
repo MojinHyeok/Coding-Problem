@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 
-public class º¸¼®¼îÇÎ {
+public class ë³´ì„ì‡¼í•‘{
 	public static void main(String[] args) {
 		String[] temp= {"A","B","B","B","B","B","B","C","B","A"};
 		System.out.println(Arrays.toString(solution(temp)));

@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
-public class µğ½ºÅ©ÄÁÆ®·Ñ·¯ {
+public class ë””ìŠ¤í¬ì»¨íŠ¸ë¡¤ëŸ¬ {
 	public static void main(String[] args) {
 		int[][] temp= {{1, 9},{2, 6},{0,3}};
 		int r=solution(temp);

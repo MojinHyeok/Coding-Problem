@@ -1,10 +1,10 @@
-package ÁØºñ¿îµ¿;
+package ì¤€ë¹„ìš´ë™;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class BOJ_1292_½±°ÔÇª´Â¹®Á¦ {
+public class BOJ_1292_ì‰½ê²Œí‘¸ëŠ”ë¬¸ì œ {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
@@ -17,7 +17,7 @@ public class BOJ_1292_½±°ÔÇª´Â¹®Á¦ {
                 list.add(i);
             }
         }
-        // a~b »çÀÌÀÇ ÇÕ ±¸ÇÏ±â
+        // a~b ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½Ï±ï¿½
         int result = 0;
         for (int i = a; i <= b; i++) {
             result += list.get(i-1);

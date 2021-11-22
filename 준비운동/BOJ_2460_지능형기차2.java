@@ -1,11 +1,11 @@
-package ÁØºñ¿îµ¿;
+package ì¤€ë¹„ìš´ë™;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class BOJ_2460_Áö´ÉÇü±âÂ÷2 {
+public class BOJ_2460_ì§€ëŠ¥í˜•ê¸°ì°¨2 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
 		int ans=0;

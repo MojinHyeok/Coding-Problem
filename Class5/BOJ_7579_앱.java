@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.StringTokenizer;
 
-public class BOJ_7579_�� {
+public class BOJ_7579_앱 {
 	//��������
 	//2�����迭�� ����Ͽ� �׸������λ������� �޸𸮹���Ʈ ���� �ּҷ� ����Ͽ� Ǯ��ôµ� ����
 	//�׸��Ͽ� �ٸ������� �õ��Ͽ� �賶����ó�� �����Ͽ����ϴ�.
