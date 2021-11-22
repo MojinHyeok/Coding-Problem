@@ -7,10 +7,10 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.StringTokenizer;
 
-public class BOJ_7579_¾Û {
-	//¹®Á¦Á¢±Ù
-	//2Â÷¿ø¹è¿­À» »ç¿ëÇÏ¿© ±×¸®µðÀûÀÎ»ý°¢À¸·Î ¸Þ¸ð¸®¹ÙÀÌÆ® ¼ö¸¦ ÃÖ¼Ò·Î »ç¿ëÇÏ¿© Ç®¾îºÃ´Âµ¥ ¿À´ä
-	//±×¸®ÇÏ¿© ´Ù¸¥»ý°¢À» ½ÃµµÇÏ¿© ¹è³¶¹®Á¦Ã³·³ Á¢±ÙÇÏ¿´½À´Ï´Ù.
+public class BOJ_7579_ï¿½ï¿½ {
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	//2ï¿½ï¿½ï¿½ï¿½ï¿½è¿­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½×¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Þ¸ð¸®¹ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ ï¿½Ö¼Ò·ï¿½ ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ Ç®ï¿½ï¿½Ã´Âµï¿½ ï¿½ï¿½ï¿½ï¿½
+	//ï¿½×¸ï¿½ï¿½Ï¿ï¿½ ï¿½Ù¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ãµï¿½ï¿½Ï¿ï¿½ ï¿½è³¶ï¿½ï¿½ï¿½ï¿½Ã³ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.
 	public static void main(String[] args) throws IOException {
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st=new StringTokenizer(br.readLine());
@@ -38,7 +38,7 @@ public class BOJ_7579_¾Û {
 //			System.out.println(Arrays.toString(x));
 		int ans=Integer.MAX_VALUE;
 		int[][] dy=new int[N][sum+1];
-		//¾Æ·¡¿Í °°ÀÌ dy¸¦ ÇÑÁÙ·ÎÇÏ°í ½ÇÇàÇØºÃ´Âµ¥ ¹«ºÐº°ÇÏ°Ô Ãß°¡µÇ¹Ç·Î Æ÷±â.
+		//ï¿½Æ·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ dyï¿½ï¿½ ï¿½ï¿½ï¿½Ù·ï¿½ï¿½Ï°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ØºÃ´Âµï¿½ ï¿½ï¿½ï¿½Ðºï¿½ï¿½Ï°ï¿½ ï¿½ß°ï¿½ï¿½Ç¹Ç·ï¿½ ï¿½ï¿½ï¿½ï¿½.
 		//		int ans=Integer.MAX_VALUE;
 		//		int[] dy=new int[sum+1];
 		//		for(int i=0;i<N;i++) {
@@ -49,7 +49,7 @@ public class BOJ_7579_¾Û {
 		//				if(dy[j]>=M)ans=Math.min(j, ans);
 		//			}
 		//		}
-		//±×·¯¹Ç·Î 2Â÷¿ø¹è¿­·Î ¸¸µé¾î ±¸ÇöÇØºÃ½À´Ï´Ù.
+		//ï¿½×·ï¿½ï¿½Ç·ï¿½ 2ï¿½ï¿½ï¿½ï¿½ï¿½è¿­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ØºÃ½ï¿½ï¿½Ï´ï¿½.
 		for(int i=0;i<N;i++) {
 			int memory=arr[i][0];
 			int money=arr[i][1];
@@ -61,7 +61,7 @@ public class BOJ_7579_¾Û {
 					if(j>=money)dy[i][j]=Math.max(dy[i-1][j],dy[i-1][j-money]+memory);
 					else dy[i][j]=dy[i-1][j];
 				}
-				if(dy[i][j]>=M)ans=Math.min(j, ans);//°è¼ÓÇÏ¿© ´äÀ» ÃÖ½ÅÈ­ ½ÃÄÑÁÖ´Â°úÁ¤
+				if(dy[i][j]>=M)ans=Math.min(j, ans);//ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ö½ï¿½È­ ï¿½ï¿½ï¿½ï¿½ï¿½Ö´Â°ï¿½ï¿½ï¿½
 			}
 		}		
 		System.out.println(ans);
