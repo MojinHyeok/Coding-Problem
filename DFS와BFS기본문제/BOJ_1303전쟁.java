@@ -36,6 +36,7 @@ public class BOJ_1303전쟁 {
 		int ans2=0;
 		for(int i=0;i<M;i++) {
 			for(int j=0;j<N;j++) {
+				//처음 방문한곳 체크하기
 				if(check[i][j]==false) {
 					char tmp=map[i][j];
 					int tmpV=1;
@@ -47,6 +48,7 @@ public class BOJ_1303전쟁 {
 						for(int d=0;d<4;d++) {
 							int dr=cur.x+dx[d];
 							int dc=cur.y+dy[d];
+							//맵 안에 있는지 확인, 적인지 아군인지 확인, 그리고 한번 갔던 곳인지 확인.
 							if(dr>=0&&dc>=0&&dr<M&&dc<N&&!check[dr][dc]&&map[dr][dc]==tmp) {
 								check[dr][dc]=true;
 								tmpV++;
@@ -54,6 +56,7 @@ public class BOJ_1303전쟁 {
 							}
 						}						
 					}
+					//적을 체크한건지 우리팀을 체크한건지 확인..
 					if(tmp=='W')ans+=tmpV*tmpV;
 					else ans2+=tmpV*tmpV;
 				}
