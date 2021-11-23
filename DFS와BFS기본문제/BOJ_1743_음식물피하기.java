@@ -36,11 +36,13 @@ public class BOJ_1743_음식물피하기 {
 					check[i][j]=true;
 					Queue<node> que=new LinkedList<>();
 					que.add(new node(i,j));
+					//BFS작업
 					while(!que.isEmpty()) {
 						node cur=que.poll();
 						for(int d=0;d<4;d++) {
 							int dr=cur.x+dx[d];
 							int dc=cur.y+dy[d];
+							//맵안에있는지 확인, 음식물 쓰레기가 있는지 확인, 이전에 이미 체크햇는지 확인.
 							if(dr>=1&&dc>=1&&dr<=N&&dc<=M&&map[dr][dc]==1&&!check[dr][dc]) {
 								check[dr][dc]=true;
 								tmp++;
