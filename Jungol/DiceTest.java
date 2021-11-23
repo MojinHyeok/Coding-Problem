@@ -9,11 +9,11 @@ public class DiceTest {
     static boolean[] isSelected;
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        N=sc.nextInt();//ÁÖ»çÀ§¸¦ ´øÁø È½¼ö
+        N=sc.nextInt();//ì£¼ì‚¬ìœ„ë¥¼ ë˜ì§„ íšŸìˆ˜
         numbers=new int[N];
-        isSelected = new boolean[7];//1-6±îÁö ÁÖ»çÀ§ÀÇ ´«ÀÇ »ç¿ë¿©ºÎ
+        isSelected = new boolean[7];//1-6ê¹Œì§€ ì£¼ì‚¬ìœ„ì˜ ëˆˆì˜ ì‚¬ìš©ì—¬ë¶€
         
-        int M=sc.nextInt();//´øÁö±â ¸ðµå
+        int M=sc.nextInt();//ë˜ì§€ê¸° ëª¨ë“œ
         totalcnt=0;
         switch(M) {
         case 1:
@@ -29,10 +29,10 @@ public class DiceTest {
             dice4(0,1);
             break;
         }
-        System.out.println("°æ¿ìÀÇ ¼ö :"+totalcnt);
+        System.out.println("ê²½ìš°ì˜ ìˆ˜ :"+totalcnt);
         
     }
-    //Áßº¹¼ø¿­: n¤Ðr ==>n^r
+    //ì¤‘ë³µìˆœì—´: nã… r ==>n^r
     private static void dice1(int cnt) {
         if(cnt==N) {
             totalcnt++;
@@ -44,7 +44,7 @@ public class DiceTest {
             dice1(cnt+1);
         }
     }
-    //¼ø¿­:nPr==>n!
+    //ìˆœì—´:nPr==>n!
     private static void dice2(int cnt) {
         if(cnt==N) {
             totalcnt++;
@@ -60,7 +60,7 @@ public class DiceTest {
             
         }
     }
-    //Áßº¹Á¶ÇÕnHr:6H3=n+r-1Cr:8C3:56
+    //ì¤‘ë³µì¡°í•©nHr:6H3=n+r-1Cr:8C3:56
     private static void dice3(int cnt,int start) {
         if(cnt==N) {
             totalcnt++;
@@ -73,7 +73,7 @@ public class DiceTest {
             
         }
     }
-    //Á¶ÇÕ :nCr : 6C3:20
+    //ì¡°í•© :nCr : 6C3:20
     private static void dice4(int cnt,int start) {
         if(cnt==N) {
             totalcnt++;
