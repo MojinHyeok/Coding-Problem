@@ -92,21 +92,22 @@ public class BOJ_18500_미네랄2 {
 				que.add(new node(R,i));
 				visit[R][i]=true;
 				count++;
-				while(!que.isEmpty()) {
-					node cur = que.poll();
-					for(int d=0;d<4;d++) {
-						int dx = cur.x+dr[d];
-						int dy = cur.y+dc[d];
-						if(dx>=1&&dy>=1&&dx<=R&&dy<=C&&!visit[dx][dy]&&map[dx][dy]=='x') {
-							count++;
-							que.add(new node(dx,dy));
-							visit[dx][dy]=true;
-						}
-						
-					}
-					
-				}
+				
 			}
+		}
+		while(!que.isEmpty()) {
+			node cur = que.poll();
+			for(int d=0;d<4;d++) {
+				int dx = cur.x+dr[d];
+				int dy = cur.y+dc[d];
+				if(dx>=1&&dy>=1&&dx<=R&&dy<=C&&!visit[dx][dy]&&map[dx][dy]=='x') {
+					count++;
+					que.add(new node(dx,dy));
+					visit[dx][dy]=true;
+				}
+				
+			}
+			
 		}
 		if(count != cnt) {
 			gravity(cnt,R,C);
@@ -114,11 +115,11 @@ public class BOJ_18500_미네랄2 {
 		
 	}
 	private static void gravity(int cnt, int r, int c) {
-		Queue<node> que = new LinkedList<>();
 		List<node> arr =new ArrayList<>();
 		for(int i=r;i>=2;i--) {
 			for(int j=1;j<=c;j++) {
 				if(!visit[i][j]&&map[i][j]=='x') {
+					map[i][j]='.';
 					arr.add(new node(i,j));
 					
 				}
@@ -127,20 +128,20 @@ public class BOJ_18500_미네랄2 {
 		while(true) {
 			boolean check =true;
 			for(node x: arr) {
-				que.add(x);
 				if((map[x.x+1][x.y]=='x'&&visit[x.x+1][x.y])||x.x==r) {
 					check= false;
 					break;
 				}
 			}
 			
-			if(!check)break;
-			arr = new ArrayList<>();
-			while(!que.isEmpty()) {
-				node cur = que.poll();
-				map[cur.x][cur.y]='.';
-				map[cur.x+1][cur.y]='x';
-				arr.add(new node(cur.x+1,cur.y));
+			if(!check) {
+				for(node x: arr) {
+					map[x.x][x.y]='x';
+				}
+				break;
+			}
+			for(node x : arr) {
+				x.x++;
 			}
 			
 		}
